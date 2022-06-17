@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <!--Makes responsive to device width-->
+        <meta name="viewport" content="width=device-width,initial-scale-1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body style="background-color:aliceblue">
+        <div class="container">
+            <div class="row" style="height:500px">
+                <div class="col-8">
+                    <div>
+                        <div class="row"><h4>Billing address</h4></div><br>
+                        <div class="row">
+                            <div class="col">
+                                <h5>First name</h5>
+                                <input type="text">
+                            </div>
+                            <div class="col">
+                                <h5>Last name</h5>
+                                <input type="text">
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <h5>Username</h5>
+                            <tag class="input-group" >
+                                <input type="submit" value="@" class="btn btn-secondary" style="border-top-left-radius:5px;border-bottom-left-radius:5px;">
+                                <input type="email" class="form-control" placeholder="Username">
+                            </tag>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <h5>Email (Optional)</h5>
+                            <input type="text" class="form-control" placeholder="you@example.com">
+                        </div><br>
+                        <div class="row">
+                            <h5>Address</h5>
+                            <input type="text" class="form-control" placeholder="your address">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <h5>Address 2 (Optional)</h5>
+                            <input type="text" class="form-control" placeholder="your address">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Country</h5>
+                                <input type="text">
+                            </div>
+                            <div class="col">
+                                <h5>State</h5>
+                                <input type="text">
+                            </div>
+                            <div class="col">
+                                <h5>Zip</h5>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <p><input type="checkbox">  Shipping address is the same address as my Billing address</p>
+                            <p><input type="checkbox">  Save this information for next time</p>
+                        </div><hr>
+                        <div class="row">
+                            <h4>Payment</h4>
+                            <p><input type="radio" name="card">  Credit card</p>
+                            <p><input type="radio" name="card">  Debit card</p>
+                            <p><input type="radio" name="card">  Paypal</p>
+                        </div><hr>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Name on the card</h5>
+                                <p><input type="text"></p>
+                                <p>Full name as displayed on card</p>
+                            </div>
+                            <div class="col">
+                                <h5>Credit card number</h5>
+                                <p><input type="text"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Expiration</h5>
+                                <input type="text">
+                            </div>
+                            <div class="col">
+                                <h5>CVV</h5>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <br><hr>
+                        <div class="row">
+                            <input type="submit" class="btn btn-primary" value="Continue to checkout" style="width:900px" >
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-4" style="padding-inline:35px">
+                    <div class="row" style="display:flex;justify-content:space-between">
+                        <h4 class="col">Your Cart</h4>
+                        <p style="width:7px;height:7px;"><span class="col badge text-bg-secondary">2</span></p>
+                    </div>
+                    <div >
+                        <ul class="list-group">
+                            <li class="row list-group-item" style="display:flex;justify-content:space-between">
+                                <div class="col">
+                                    <h5>Product name</h5>
+                                    <p class="disabled">Breif description</p>
+                                </div>
+                                <div class="col" style="text-align:right">
+                                    <p>$12</p>
+                                </div>
+                            </li>
+                            <li class="row list-group-item " style="display:flex;justify-content:space-between">
+                                <div class="col">
+                                    <h5>Second product</h5>
+                                    <p>Breif description</p>
+                                </div>
+                                <div class="col" style="text-align:right">
+                                    <p>$8</p>
+                                </div>
+                            </li>
+                            <li class="row list-group-item" style="display:flex;justify-content:space-between">
+                                <div class="col" style="color:rgb(42, 233, 8)">
+                                    <h5>Promo code</h5>
+                                    <p>EXAMPLE CODE</p>
+                                </div>
+                                <div class="col" style="text-align:right;color:rgb(42, 233, 8)">
+                                    <p>-$5</p>
+                                </div>
+                            </li>
+                            <li class="row list-group-item" style="display:flex;justify-content:space-between">
+                                <div class="col">
+                                    <h5>Total (USD)</h5>
+                                </div>
+                                <div class="col" style="text-align:right">
+                                    <p>$15</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="input-group" style="padding-inline:15px;">
+                            <input type="text" class="form-control col-8" placeholder="Promo code">
+                            <input type="submit" class="btn btn-secondary col-4" value="Redeem" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
